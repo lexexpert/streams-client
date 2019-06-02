@@ -6,13 +6,13 @@ const Header = () => {
   return (
     <div className={'ui menu'}>
       <Link to={'/'} className={'item'}>
-        Streamer
+        Home
       </Link>
       <div className={'right menu'}>
         <Link to={'/'} className={'item'}>
           All streams
         </Link>
-        <GoogleAuth />
+        <GoogleAuth className={'item'}/>
       </div>
     </div>
   )
