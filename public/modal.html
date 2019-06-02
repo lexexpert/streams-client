@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .sidebar{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 300px;
+      background-color: #61dafb;
+    }
+
+    .content{
+      margin-left: 300px;
+    }
+
+    .modal-body{
+      background-color: white;
+      margin: auto;
+      width: 30%;
+      height: 30%;
+    }
+
+    .modal{
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background-color: lightgray;
+      left: 0;
+      top: 0;
+      z-index: 10;
+    }
+
+    .positioned{
+      position: relative;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="sidebar">Sidebar</div>
+  <div class="content">Content</div>
+  <div class="positioned">
+    <div class="modal">
+      <div class="modal-body">
+        <h1>Modal</h1>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
